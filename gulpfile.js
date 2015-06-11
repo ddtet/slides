@@ -19,6 +19,18 @@ gulp.task('build', function() {
       }));
 });
 
+gulp.task('sync_folders', function() {
+  return gulp.src('src/**/images')
+    .pipe(shell([
+      'cp -aR <%= file.path %> <%= tp(file.path) %>'
+    ], {
+      templateData:
+        {
+          tp: function (path) { return path.replace('/src/','/dist/'); }
+        }
+    }));
+});
+
 gulp.task('default', function () {
   console.log("Run default");
 });
