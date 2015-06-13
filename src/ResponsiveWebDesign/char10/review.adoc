@@ -1,6 +1,7 @@
 = 第 10 章導讀
 Jeff Lin <jeffddt.et@gmail.com>
 v1.0, May 2015
+:revealjs_transition: convex
 
 == 導覽與標題配置
 

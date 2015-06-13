@@ -10,7 +10,7 @@ gulp.task('default', function() {
 gulp.task('build', function() {
   return gulp.src('src/**/*.adoc')
     .pipe(shell(
-      ['asciidoctor -T dist/asciidoctor-reveal.js/templates/slim/ -o <%= tp(file.path) %> <%= file.path %>'],
+      ['asciidoctor -T dist/asciidoctor-reveal.js/templates/slim/ -o <%= tp(file.path) %> -a data-uri <%= file.path %>'],
       {
         templateData:
           {
