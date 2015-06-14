@@ -5,12 +5,13 @@ v1.0, May 2015
 
 == 導覽與標題配置
 
-[[Title And Navegation]]
+image::images/roles.jpg[導覽像路標，指引使用者方向]
 
 === 主要作用
 
-* 宣告當前的位置
-* 引導使用者移動
+告訴使用者位置並引導移動
+
+image::images/map.png[找到方向是重要的]
 
 == 品牌商標
 
@@ -18,26 +19,33 @@ v1.0, May 2015
 
 image::images/star_fuck_logo.jpg[starbuck?]
 
-=== 作法
+=== 目的與作用
 
 藉由公司標誌、公司名稱來讓使用者辨示。有時候也會加上標語來讓新訪客知道公司在作些什麼。
 
-=== 縮小
+image::images/htc.png[HTC Logo]
 
-通常改變標誌的尺寸或標題文字，使其符合螢幕尺寸即可
+[big green]##H##ow [big green]##T##o [big green]##C##PR?
 
-=== 使用相同的色系
+=== 作法
 
-使用整個網站通用的色系，容易讓人明白是在同一個地方
+* 改變標誌的尺寸或標題文字，使其符合螢幕尺寸
+* 使用整個網站通用的色系，讓人明白在同一個網站
+
+現在似乎比較找不到大型 Logo 的網站
 
 == 導覽連結
 
 使用者需要依靠導覽，才能到達網站的不同區域
 
+image::images/ways.jpg[通往目的地的路？]
+
 === 用途
 
 * 提供到達另一個頁面的路徑
 * 提供分類，幫助使用者找到需要的東西
+
+image::images/no_exit.jpg[Find Way?]
 
 == 導覽模式
 
@@ -82,7 +90,7 @@ image::images/smallRoom.jpg[smallRoom, 487.5, 521.3]
 
 傳統多以軟體開發的方式，找和專案相關的利害關係人
 
-[[不同角色之間的想法在拉扯]]
+image::images/co-workers-294266_640.png[different ideas]
 
 利害關係人 ≠ 網站使用對象
 
@@ -97,13 +105,13 @@ image::images/smallRoom.jpg[smallRoom, 487.5, 521.3]
 
 在正確清楚的路徑上，能夠忍受更多次的點擊
 
-[[走在正確的道路上]]
+image::images/black-forest-341144_640.jpg[right way]
 
 === 避免迷路
 
 當使用者不能確定走對了，會造成疑惑⋯
 
-[[找不到方向時，再短的路徑也覺得漫長]]
+image::images/wrong-way-429723_640.jpg[wrong way]
 
 === 製作原則
 
