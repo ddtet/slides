@@ -1,46 +1,56 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Jeff Lin"><title>11 章導讀</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="http://cdn.bootcss.com/reveal.js/3.1.0/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="http://cdn.bootcss.com/reveal.js/3.1.0/css/theme/league.css" id="theme"><link href="http://cdn.bootcss.com/reveal.js/3.1.0/lib/css/zenburn.css" rel="stylesheet"><script type="text/javascript">document.write( '<link rel="stylesheet" href="http://cdn.bootcss.com/reveal.js/3.1.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section><h2>11 章導讀</h2><p><small>Jeff Lin</small></p></section><section id="_效能"><h2>效能</h2><div class="paragraph"><p>增加效能的方式不外乎⋯</p></div>
 <div class="ulist"><ul><li><p>加快速度</p></li><li><p>減少工作量</p></li></ul></div></section>
 <section><section id="_由生活理解網路"><h2>由生活理解網路</h2><div class="paragraph"><p>以生活的例子，對應網路世界，其實它們還滿相像的</p></div></section><section id="_到公所申請資料"><h2>到公所申請資料</h2><div class="paragraph"><p>在瀏覽器中輸入網址，開啟一個網站</p></div></section><section id="_首先_查公所位置"><h2>首先，查公所位置</h2><div class="paragraph"><p>藉由詢問名稱伺服器(DNS)，瀏覽器將網址轉換成 IP 後連線</p></div>
-<div class="literalblock"><div class="content"><pre>和人一樣，瀏覽器會記住不久前到過的地方（IP）不會多次詢問同一件事。</pre></div></div></section><section id="_出發到公所"><h2>出發到公所</h2><div class="paragraph"><p>可能是走路、騎車、坐車，甚至是坐船搭飛機，都有可能。不過大家通常會選擇最短的路徑。</p></div>
-<div class="paragraph"><p>在網路，也是一樣地會試著讓訊號走最短的路徑到主機。</p></div>
-<div class="paragraph"><p>當發現道路不通，也會試著繞路，多花一些時間來到達目的地。</p></div></section><section id="_到了公所_前往對應的櫃台"><h2>到了公所，前往對應的櫃台</h2><div class="paragraph"><p>不同種類的櫃台提供不同的服務，每個櫃台通常會帶一個數字編號，方便辦認。</p></div>
-<div class="paragraph"><p>在網路，編號稱為 port 號，要走到正確的 port ，才能拿到對應的服務。</p></div>
-<div class="paragraph"><p>一般而言 http 是 80 ，https 是 443 。這種約定好的 port 號不需要輸入在網址中。</p></div></section><section id="_抽號碼牌等叫號"><h2>抽號碼牌等叫號</h2><div class="paragraph"><p>所有來辨理的人都要等待叫號，才能到櫃台前辦理事情。</p></div>
-<div class="paragraph"><p>在網路，一個 port 同時只能服務一個要求，多的，要排隊等前面的要求處埋完畢。</p></div>
-<div class="paragraph"><p>這也是早期人們說的「流量大就要加主機」的原因。</p></div></section><section id="_在櫃台辦理事情"><h2>在櫃台辦理事情</h2><div class="paragraph"><p>依事情複雜度，簡單的可能自己解決，複雜的可能要詢問身邊的同事，甚至打好幾通電話去詢問。</p></div>
-<div class="paragraph"><p>在網路，服務的規則被隱藏在主機後，通常背後作了許多工作，甚至詢問其它主機好幾次。</p></div>
-<div class="paragraph"><p>服務人員越熟練，辦理的速度越快。同樣的，主機等級越高，程式邏輯越好，越快完成工作。</p></div></section><section id="_拿到辦理的結果"><h2>拿到辦理的結果</h2><div class="paragraph"><p>可能只是單純的一張收據，或是一大包需要箱子、推車才能帶得走的文件。依不同服務而定。</p></div>
-<div class="paragraph"><p>在網路中，可能只是取得一個「已完成」的訊號，也可能是一個很大的圖片或 PDF。</p></div>
-<div class="paragraph"><p>要傳遞的資料越多，需要越多時間、力氣才能把完整的資料帶回家。</p></div></section><section id="_查看資料"><h2>查看資料</h2><div class="paragraph"><p>收據瞄一眼就好，小冊子般的文件讓人沒耐心讀完，如果裡面又夾了幾張廣告，就會讓人厭煩。</p></div>
-<div class="paragraph"><p>瀏覽器也一樣，只不過它不會抱怨，當面對資料量大的時候，仍然是一步一步完成資料解析與顯示。</p></div>
-<div class="paragraph"><p>相對的，花費更多的時間完成畫面呈現，給使用的感覺就會變差。</p></div></section><section id="_發現還缺少資料時"><h2>發現還缺少資料時⋯</h2><div class="paragraph"><p>得重新由家裡出門，回到公所，對應的櫃台前⋯⋯⋯一系列的動作。</p></div>
-<div class="paragraph"><p>瀏覽器要直到解析完所有資料後，才知道缺少哪些內容，可能是 Javascript, CSS, 或是圖片⋯⋯。</p></div>
-<div class="paragraph"><p>因此，每一次瀏覽器都需要重新發新的要求，才能取得另一筆資料。</p></div></section><section id="_小結論"><h2>小結論</h2><div class="paragraph"><p>由上述過程，增加效能的工作其實就是⋯</p></div>
+<div class="literalblock"><div class="content"><pre>和人一樣，瀏覽器會記住不久前到過的地方（IP）不會多次詢問同一網站的 IP</pre></div></div></section><section id="_出發到公所"><h2>出發到公所</h2><div class="paragraph"><p>電腦會試圖以最短的路徑取得資料</p></div>
+<div class="literalblock"><div class="content"><pre>一樣有可能遇上塞車、道路不通等狀況，會試著繞路到達目的地</pre></div></div></section><section id="_抵達公所_到對應的櫃台前"><h2>抵達公所，到對應的櫃台前</h2><div class="paragraph"><p>伺服器可以同時提供多種服務</p></div>
+<div class="paragraph"><p>不同櫃台處理不同的業務(對應不同處理程式)</p></div>
+<div class="paragraph"><p>對應於真實世界的櫃台，被稱為 port</p></div>
+<div class="literalblock"><div class="content"><pre>一般而言 http 是 80 ，https 是 443 ；這種約定好的 port 號可以省略</pre></div></div></section><section id="_在櫃台前排隊_或等叫號"><h2>在櫃台前排隊(或等叫號)</h2><div class="paragraph"><p>同時只服務一台主機的一個要求，其它統統要排隊等待</p></div>
+<div class="paragraph"><p>等待過久，瀏覽器會失去耐心，判定為連線失敗(timeout)</p></div>
+<div class="literalblock"><div class="content"><pre>這也是早期人們說的「流量大就要加主機」的原因，讓多幾個公所，服務同一地區居民</pre></div></div></section><section id="_等待櫃台處理"><h2>等待櫃台處理</h2><div class="paragraph"><p>簡單的工作可以瞬間被完成，像讀取靜態檔案</p></div>
+<div class="paragraph"><p>複雜的工作，有的甚至得詢問其它主幾多次</p></div>
+<div class="literalblock"><div class="content"><pre>主機等級越高，程式邏輯越好，就能越快完成工作
+以現在「雲端科技」架構下，主機之間的相互詢問會越來越頻繁</pre></div></div></section><section id="_帶回辦理的結果"><h2>帶回辦理的結果</h2><div class="paragraph"><p>需要傳遞的資料越多，需要越多時間才能完成</p></div>
+<div class="paragraph"><p>瀏覽器需要等待傳輸完成後才能開始解析、呈現資料</p></div>
+<div class="literalblock"><div class="content"><pre>所以「如何讓瀏覽器更快拿到資料」，是主要被討論的議題之一</pre></div></div></section><section id="_解析資料"><h2>解析資料</h2><div class="paragraph"><p>隨著硬體等級提升，解析資料，變得越來越不花時間</p></div>
+<div class="paragraph"><p>但是毫無節制多餘、過份複雜的資料，仍是一種負擔</p></div>
+<div class="literalblock"><div class="content"><pre>就開發維護的角度而言，多餘的資料也會造成管理上的困擾，應䀆可能避免</pre></div></div></section><section id="_發現還缺少資料時"><h2>發現還缺少資料時⋯</h2><div class="paragraph"><p>要求網頁只是要回 HTML 內容，不含圖片、JavaScript、CSS</p></div>
+<div class="paragraph"><p>瀏覽器在背景再發出要求，將這些檔案一一要回來</p></div>
+<div class="literalblock"><div class="content"><pre>每一個要求都如同上述流程一樣，從頭開始一步一步進行
+
+若檔案解析完還會引用其它的內容，將會再觸發其它網路要求</pre></div></div></section><section id="_小結論"><h2>小結論</h2><div class="paragraph"><p>前面一共提到了九個步驟，花聽就很累人了</p></div>
+<div class="paragraph"><p>所以優化效能的工作就是⋯</p></div>
 <div class="ulist"><ul><li><p>減少需要傳遞的資料量</p></li><li><p>減少要求資料的次數</p></li></ul></div></section></section>
-<section><section id="_減少傳輪資料量"><h2>減少傳輪資料量</h2><div class="paragraph"><p>今天有一個內容固定不變的檔案，如何讓傳輸量變少？</p></div></section><section id="_把資料壓縮再傳遞"><h2>把資料壓縮再傳遞</h2><div class="paragraph"><p>在伺服器先將資料進行壓縮，傳遞到客戶端後再由瀏覽器解壓縮、解析。</p></div>
-<div class="paragraph"><p>使用的技術，其實和 zip 檔壓縮是同一種技術。</p></div></section><section id="_合算嗎"><h2>合算嗎？</h2><div class="ulist"><ul><li><p>個人經驗，純文字的檔案能壓至 10% 的大小。</p></li><li><p>電腦運算大幅提升，壓縮/解壓縮檔案需要的時間越來越少</p></li><li><p>網路環境是最難控制與掌握的</p></li></ul></div></section><section id="_所以"><h2>所以⋯</h2><div class="paragraph"><p>壓縮資料後再進行傳輸，對於多數是純文字內容的網頁資料，是很划算的。</p></div></section><section id="_實際作法"><h2>實際作法</h2><div class="paragraph"><p>新一些的瀏覽器會詢問伺服器有沒有壓縮資料的功能，如果有的話，接下來的溝通都將先壓縮才傳送。</p></div></section><section id="_現況"><h2>現況</h2><div class="paragraph"><p>將網頁內容壓縮傳遞已經是「標準配備」了。新一代的瀏覽器與主流伺務器都有支援。</p></div>
-<div class="paragraph"><p>只要互相確認能以壓縮資料傳遞，就會切換到這個模式。</p></div>
-<div class="paragraph"><p>所以⋯ 其實這和 UI、企劃，甚至一般程式人員都沒有關係。</p></div></section></section>
-<section><section id="_網頁組成的改變"><h2>網頁組成的改變</h2><div class="paragraph"><p>從最最原始的「純文字網頁」，到現在互動、介面優化的「網路應用程式」。</p></div><div class="paragraph"><p>一個頁面需要使用到的 javascript 、圖片檔案越來越多。導致一個頁面的呈現需要更多次向的伺服器要回需要的檔案。</p></div></section><section id="_快取_cache"><h2>快取(Cache)</h2><div class="paragraph"><p>如果同樣的檔案內容，如果能夠直接取得曾經讀過的那一份。就可以省下至少一次重覆的要求。</p></div>
-<div class="paragraph"><p>像是每一頁都會使用到的共用 javascript 、 CSS 檔案。快取技術可以讓頁面開啟的速度更快。</p></div></section><section id="_代理服務_proxy"><h2>代理服務(Proxy)</h2><div class="paragraph"><p>Cache 也是代理服務的其中一項功能，和本機 cache 一樣，重覆的檔案在一定時間內不會重複向伺服務要求。</p></div>
-<div class="paragraph"><p>對於像是學校或對外頻寬有限的地方， Proxy 機制有助於加快速度，減少對外的網路流量。。讓整體的反應變快。</p></div></section><section id="_缺點"><h2>缺點</h2><div class="paragraph"><p>由於重複的檔案不會重新抓取，也就表示，一個檔案被修改，可能在一定的時間內，用戶會看到舊的版本。如果是錯誤的圖片或程式，一直接到已經被處理的客訴很讓人困擾。</p></div>
-<div class="paragraph"><p>所以許多客服人員嘴上會常出現：「來，我們先來清一下 cache 再試試」。</p></div></section><section id="_小結論_2"><h2>小結論</h2><div class="paragraph"><p>不管是本機端的 cache 或是 proxy。都是既有機制或是由網管人員負責的。原則上只需要理解，不需要動手作些什麼。只需要注意會不會有可能發生的問題。</p></div>
+<section><section id="_減少傳輪資料量"><h2>減少傳輪資料量</h2><div class="paragraph"><p>今天有一個內容固定不變的檔案，如何讓傳輸量變少？</p></div></section><section id="_把資料壓縮再傳遞"><h2>把資料壓縮再傳遞</h2><div class="paragraph"><p>先將資料壓縮，再由瀏覽器解壓縮、解析。</p></div>
+<div class="literalblock"><div class="content"><pre>使用的技術，其實和 zip 檔壓縮是同一種技術。</pre></div></div></section><section id="_合算嗎"><h2>合算嗎？</h2><div class="ulist"><ul><li><p>個人經驗，純文字的檔案能壓至 10% 的大小</p></li><li><p>電腦運算提升，壓縮/解壓縮檔案需要的時間越來越少</p></li><li><p>網路環境是最難控制與掌握的</p></li></ul></div></section><section id="_所以"><h2>所以⋯</h2><div class="paragraph"><p>壓縮資料後再進行傳輸，對於多數是純文字內容的網頁資料，是很划算的</p></div></section><section id="_運作方式"><h2>運作方式</h2><div class="paragraph"><p>瀏覽器會先詢問伺服器有沒有提供壓縮資料的功能</p></div>
+<div class="paragraph"><p>如果有的話，接下來的溝通都會壓縮後才傳送</p></div></section><section id="_現況"><h2>現況</h2><div class="paragraph"><p>已經是「標準配備」了，新一代瀏覽器與伺服器都支援</p></div>
+<div class="paragraph"><p>只要確認能以壓縮資料傳遞，就會自動切換到這個模式</p></div>
+<div class="paragraph"><p>所以⋯ 其實和 UI、企劃，甚至一般程式人員沒有直接關係</p></div></section></section>
+<section><section id="_網頁組成的改變"><h2>網頁組成的改變</h2><div class="paragraph"><p>從「純文字網頁」→互動、介面豐富的「網路應用程式」</p></div><div class="ulist"><ul><li><p>一個頁面需要使用到的 javascript 、圖片檔案越來越多</p></li><li><p>導致一個頁面的呈現需要更多次向的伺服器要回的檔案</p></li></ul></div></section><section id="_快取_cache_技術"><h2>快取(Cache)技術</h2><div class="paragraph"><p>如果同樣的檔案內容，如果能夠直接取得曾經讀過的那一份。就可以省下至少一次重覆的要求</p></div>
+<div class="paragraph"><p>像是每一頁都會使用到的共用 javascript 、 CSS 檔案。快取技術可以讓頁面開啟的速度更快</p></div></section><section id="_代理服務_proxy"><h2>代理服務(Proxy)</h2><div class="paragraph"><p>Cache 也是代理服務的其中一項功能，和本機 cache 一樣，重複的檔案在一定時間內不會重複向伺服務要求</p></div>
+<div class="paragraph"><p>對於像是學校或對外頻寬有限的地方， Proxy 機制有助於加快速度，減少對外的網路流量。。讓整體的反應變快</p></div></section><section id="_缺點"><h2>缺點</h2><div class="paragraph"><p>由於重複的檔案不會重新抓取，也就表示，一個檔案被修改，可能在一定的時間內，用戶會看到舊的版本。如果是錯誤的圖片或程式，一直接到已經被處理的客訴很讓人困擾。</p></div>
+<div class="literalblock"><div class="content"><pre>所以許多客服人員嘴上會常出現：「來，我們先來清一下 cache 再試試」。</pre></div></div></section><section id="_小結論_2"><h2>小結論</h2><div class="paragraph"><p>不管是本機端的 cache 或是 proxy。都是既有機制或是由網管人員負責的。原則上只需要理解，不需要動手作些什麼。只需要注意會不會有可能發生的問題。</p></div>
 <div class="paragraph"><p>以 cache 機制而言，主要就是要避免用戶拿到過期的資料，無論是不是錯誤都一樣。</p></div></section></section>
-<section><section id="_減少檔案數量"><h2>減少檔案數量</h2><div class="paragraph"><p>如果能夠將多個檔案合併在一起傳輸，那麼就能夠省下幾次向伺服器抓資料的時間。</p></div><div class="paragraph"><p>不過現在並沒有一個能將多個檔案變成一個壓縮檔傳輸的方式(至少還不是主流)，所以必須依靠開發者進行處理。</p></div></section><section id="_javascript_與_css"><h2>Javascript 與 CSS</h2><div class="paragraph"><p>對於純文字的內容，可以輕易地前後串接，讓多個檔案變成同一個。</p></div>
-<div class="paragraph"><p>通常會利用工具，開發時仍然是多個檔案，在佈署前再將檔案合併。</p></div>
-<div class="paragraph"><p>JS 與 CSS 在開發需要分散，才容易分開測試。因此分散檔案仍然有其必要性。</p></div></section><section id="_加上縮小檔案的技術"><h2>加上縮小檔案的技術</h2><div class="paragraph"><p>為了方便編輯、閱讀，JavaScript 與 CSS 會利用換行、縮排等排版技術。</p></div>
-<div class="paragraph"><p>那些空白、縮排、換行字元省下來，有些甚至能夠省下 1/4 的檔案大小。</p></div>
-<div class="paragraph"><p>拿掉排版後會很難閱讀取修改，因此的通常是在發佈前，利用工具製作這些檔案。</p></div></section><section id="_再走火入魔一些"><h2>再走火入魔一些⋯</h2><div class="paragraph"><p>程式中利用變數來記錄資料，那麼將變數的名稱改短，整個檔案的字母數量也會跟著減少。</p></div>
-<div class="paragraph"><p>和上述的作法整合，被稱作程式檔案的「最佳化」，枋間不只一種工具能夠作到。不過都需要學習、測試才能應用到實際開發中。</p></div></section><section id="_小結論_3"><h2>小結論</h2><div class="paragraph"><p>各種合併、縮小文字檔案的技巧，實際上也是將文字內容由「人類好閱讀」轉變成「只要電腦能看得懂就好」的過程。因此，這類技巧的使用，需要搭配對應的工具與發佈流程。</p></div>
+<section><section id="_減少檔案數量"><h2>減少檔案數量</h2><div class="paragraph"><p>如果能夠將多個檔案合併在一起傳輸，那麼就能夠省下幾次向伺服器抓資料的時間。</p></div><div class="paragraph"><p>不過現在並沒有一個能將多個檔案變成一個壓縮檔傳輸的方式(至少還不是主流)，所以必須依靠開發者進行處理。</p></div></section><section id="_javascript_與_css"><h2>Javascript 與 CSS</h2><div class="paragraph"><p>純文字的內容，可以前後串接，讓多個檔案變成一個</p></div>
+<div class="literalblock"><div class="content"><pre>實務上利用工具來進行，在開發時仍然是多個獨立檔案，佈署前再合併
+
+JS 與 CSS 在開發時仍需要分散在多個檔，沒有人喜歡天天跟上千上萬行內容的檔案打交道</pre></div></div></section><section id="_加上縮小檔案的技術"><h2>加上縮小檔案的技術</h2><div class="paragraph"><p>JavaScript 與 CSS 常利用換行、縮排讓內容容易閱讀</p></div>
+<div class="paragraph"><p>將這些東西省下來，有的檔案甚至能夠減少 1/4 的大小。</p></div>
+<div class="literalblock"><div class="content"><pre>拿掉排版後會很難閱讀與修改，因此的通常是在發佈前，才利用工具製作這些檔案</pre></div></div></section><section id="_再走火入魔一些"><h2>再走火入魔一些⋯</h2><div class="paragraph"><p>程式中利用變數來記錄資料，那麼將變數的名稱改短，整個檔案的字母數量也會跟著減少。</p></div>
+<div class="literalblock"><div class="content"><pre>和上述的作法整合，被稱作檔案的「最佳化」
+枋間不只一種工具能夠作到。都需要學習、測試才能應用到實際開發中</pre></div></div></section><section id="_小結論_3"><h2>小結論</h2><div class="paragraph"><p>各種合併、縮小文字檔案的技巧，實際上也是將文字內容由「人類好閱讀」轉變成「只要電腦能看得懂就好」的過程。因此，這類技巧的使用，需要搭配對應的工具與發佈流程。</p></div>
 <div class="paragraph"><p>就現在台灣傳統的開發方式中，較少看到有這類的機制，所以幾乎沒有作任何合併或壓縮。</p></div></section></section>
-<section><section id="_關於圖片"><h2>關於圖片</h2><div class="paragraph"><p>相較於較大型的圖片(如 Blog 文章中的附圖)，因為每頁不數量固定、加上尺寸不一。比較沒有與其它圖片合併的價值。</p></div><div class="paragraph"><p>對於每一頁都會用到的圖片，尤其是應用於整個網站的圖示，合併 ＋ cache 的機制會讓網頁呈現的表現好上許多。</p></div><div class="paragraph"><p>利用 CSS 設定背景圖片位置的方式，調整組合圖的「露出」部分，也因此這也是不適合針對 Blog 文章中圖片作同樣處理的原因。</p></div></section><section id="_圖示文字"><h2>圖示文字</h2><div class="paragraph"><p>圖片合併是很常見的作法，不過對於一些較舊的瀏覽器，不支援背景圖的縮放。因此如果網站中有不同大小的圖示，就得依這些尺寸作不同大小的圖片。</p></div>
-<div class="paragraph"><p>近來漸漸開始使用「圖示文字」取代，尺寸更小、也沒有縮放的問題。</p></div></section><section id="_色彩優化"><h2>色彩優化</h2><div class="paragraph"><p>利用演算法，將圖片中顏色相近的點，設成同一種顏色。
+<section><section id="_關於圖片"><h2>關於圖片</h2><div class="paragraph"><p>較大型的圖片(如 Blog 文章中的附圖)，因為每頁數量不固定、尺寸不一。沒有合併的價值</p></div><div class="paragraph"><p>對於用於網站的圖示，合併成單檔會讓網頁表現好許多</p></div><div class="literalblock"><div class="content"><pre>技巧上是利用 CSS 設定背景圖片位置的方式，調整組合圖的「露出」部分</pre></div></div></section><section id="_對於較舊的瀏覽器"><h2>對於較舊的瀏覽器</h2><div class="paragraph"><p>圖片合併是很常見的作法，不過對於一些較舊的瀏覽器，不支援背景圖的縮放。因此如果網站中有不同大小的圖示，仍然得依這些尺寸作不同大小的圖片</p></div>
+<div class="literalblock"><div class="content"><pre>近來漸漸開始使用「圖示文字」取代，尺寸更小、也沒有縮放的問題</pre></div></div></section><section id="_色彩優化"><h2>色彩優化</h2><div class="paragraph"><p>利用演算法，將圖片中顏色相近的點，設成同一種顏色。
 可以在不明顯影響結果的狀態下，讓檔案能夠變得更小。</p></div>
-<div class="paragraph"><p>有對應的工具可以作整批的優化，繪圖軟體也幾乎都有「網頁最佳化」的選項能夠達到類似的功能。</p></div></section><section id="_小結論_4"><h2>小結論</h2><div class="paragraph"><p>相較需要整個網站共用的圖示、背景而言，變動次數較少。還能勉強由 UI 人員處理優化。也漸漸有些工具能夠協助製作組合圖片，不過相對的，除了交付程式人員圖片之外，也需要交付對應的圖片座標或是 CSS 設定。</p></div>
-<div class="paragraph"><p>對於不同領域協作、溝通的要求變得更高。</p></div></section></section>
-<section><section id="_放到更快的網路上"><h2>放到更快的網路上</h2><div class="paragraph"><p>有人把網路比喻成水管，水管越粗，水流越快。對於快速的網路環境，被稱為「大水管」。</p></div><div class="paragraph"><p>將網頁內容放在「大水管」，能夠最大限度的提高網頁的傳輸效率。</p></div></section><section id="_花錢買頻寬"><h2>花錢買頻寬</h2><div class="paragraph"><p>主機商賣主機、租機櫃位置，也賣頻寬和流量。有些服務供應商會提供不同費率，能花較多的錢去買到更快的速度。</p></div></section><section id="_選擇有多負截平衡的主機"><h2>選擇有多負截平衡的主機</h2><div class="paragraph"><p>像是 Amazon 所提供的網路服務，就可以選擇將網站放在其中一個它所提供的資料庫。也可以選擇它檔案分散、同步的機制。讓不同地方的使用者，都可以選擇較近的主機，得到更高的下載效率。</p></div>
-<div class="paragraph"><p>當然，這些東西都是一分錢一分貨。</p></div></section><section id="_資料與檔案分離"><h2>資料與檔案分離</h2><div class="paragraph"><p>也有一種作法，以 Blog 或商域來說，將網站的主程式，或是那些佔用較少頻寬、容易被 cache 的檔案和文章內容、商品等不斷變動的資料分開。就能夠比較少預算，專注加強那些變動資料的處理效率。</p></div>
-<div class="paragraph"><p>所以會聽到所謂的「出圖機」、「檔案主機」這類的名詞。</p></div></section><section id="_小結論_5"><h2>小結論</h2><div class="paragraph"><p>以上的作法，只能盡可能地增加伺服器端的頻寛。
+<div class="literalblock"><div class="content"><pre>有對應的工具可以作整批的優化
+繪圖軟體也幾乎都有「網頁最佳化」的選項能夠達到類似的功能</pre></div></div></section><section id="_小結論_4"><h2>小結論</h2><div class="paragraph"><p>相較需要整個網站共用的圖示、背景而言，變動次數較少，還能勉強由 UI 人員處理優化</p></div>
+<div class="paragraph"><p>漸漸越來䟇多工具能夠協助製作組合圖片</p></div>
+<div class="paragraph"><p>相對的，除了交付程式人員的東西，也要包含座標資訊或是 CSS 設定</p></div>
+<div class="literalblock"><div class="content"><pre>對於不同領域協作、溝通的要求變得更高</pre></div></div></section></section>
+<section><section id="_放到更快的網路上"><h2>放到更快的網路上</h2><div class="paragraph"><p>有人把網路比喻成水管，水管越粗，水流越快。對於快速的網路環境，被稱為「大水管」</p></div><div class="paragraph"><p>將網頁內容放在「大水管」，能夠最大限度的提高網頁的傳輸效率</p></div></section><section id="_花錢買頻寬"><h2>花錢買頻寬</h2><div class="paragraph"><p>主機商賣主機、租機櫃位置，也賣頻寬和流量。有些服務供應商會提供不同費率，能花較多的錢去買到更快的速度</p></div></section><section id="_選擇有多負截平衡的主機"><h2>選擇有多負截平衡的主機</h2><div class="paragraph"><p>像是 Amazon 所提供的網路服務，就可以選擇將網站放在其中一個它所提供的資料庫。也可以選擇它檔案分散、同步的機制。讓不同地方的使用者，都可以選擇較近的主機，得到更高的下載效率</p></div>
+<div class="literalblock"><div class="content"><pre>當然，這些東西都是一分錢一分貨</pre></div></div></section><section id="_資料與檔案分離"><h2>資料與檔案分離</h2><div class="paragraph"><p>也有一種作法，以 Blog 或商域來說，將網站的主程式，或是那些佔用較少頻寬、容易被 cache 的檔案和文章內容、商品等不斷變動的資料分開。就能夠比較少預算，專注加強那些變動資料的處理效率</p></div>
+<div class="literalblock"><div class="content"><pre>所以會聽到所謂的「出圖機」、「檔案主機」這類的名詞</pre></div></div></section><section id="_小結論_5"><h2>小結論</h2><div class="paragraph"><p>以上的作法，只能盡可能地增加伺服器端的頻寛。
 當用戶所在的網路環境很不理想，網路還是得遷就整個路徑中最慢的那個速度。</p></div>
 <div class="paragraph"><p>因此，在台灣的環境，通常要到一定數量流量，需要應付同時許多人的要求，這時候才比較能看出大流量的差別。</p></div></section></section>
 <section id="_理想與現實"><h2>理想與現實</h2><div class="paragraph"><p>由於人力、技術掌握的問題。在台灣比較少看到這種處理模式。可能的原因是⋯</p></div>
